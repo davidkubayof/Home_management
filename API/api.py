@@ -21,7 +21,7 @@ def upload_csv(file: UploadFile):
     #מסדר לפי מרחק את כל הCSV
     rows.sort(key=get_key,reverse= True)
     
-    append_to_room(rows)
+    
 
 if __name__ == "__main__":
     uvicorn.run(app, host="localhost", port=8000)
